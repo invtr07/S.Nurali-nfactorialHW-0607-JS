@@ -13,13 +13,14 @@ const staff= {
 
 let queue= [[staff.administrator, "administrator"],["Dalida","owner"]]
 
-if (queue.length<=10){
+if (queue.length<=1){
      console.log("Store is not busy");
      queue.push([staff.seller, "seller"])
 } else{
      console.log("Sorry one of you have to leave ...");
      queue.pop(queue[0]||queue[1]);
+     console.log(queue);
 }
 
-function 
+// need to add some exported function from another file that will do some output checkout of all clients currently being placed in the "queue" array 
 
